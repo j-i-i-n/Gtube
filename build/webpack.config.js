@@ -42,4 +42,4 @@ var config = {
   },
   plugins: [new ExtractCSS("styles.css")]
 };
-module.exports = config;
+module.exports = config; //
