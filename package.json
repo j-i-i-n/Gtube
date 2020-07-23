@@ -55,9 +55,7 @@
     "build": "npm run build:server && npm run build:assets && npm run copyAll",
     "prebuild": "shx rm -r build",
     "tunnel": "lt -h -p 5000",
-    "start": "node build/init.js",
-    "dev": "webpack --mode development --env.dist=false",
-    "dev:dist": "webpack --mode development"
+    "start": "node build/init.js"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
