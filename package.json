@@ -52,7 +52,7 @@
     "build": "npm run build:server && npm run build:assets && npm run copyAll",
     "prebuild": "shx rm -r build",
     "tunnel": "lt -h -p 5000",
-    "start": "node build/init.js"
+    "start": "NODE_ENV=production node build/init.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
