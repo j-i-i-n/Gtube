@@ -44,7 +44,6 @@
     "webpack-cli": "^3.3.12"
   },
   "scripts": {
-    "webpack": "webpack",
     "dev:server": "nodemon --exec babel-node src/init.js --delay 2 --ignore '.scss' --ignore 'static' ",
     "dev:assets": "cd src && cross-env webpack --mode development -w",
     "build:assets": "cd src && cross-env webpack --mode production",
@@ -53,7 +52,7 @@
     "build": "npm run build:server && npm run build:assets && npm run copyAll",
     "prebuild": "shx rm -r build",
     "tunnel": "lt -h -p 5000",
-    "start": "node build/index.js"
+    "start": "node build/init.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
@@ -73,9 +72,6 @@
     "rd": "^2.0.1",
     "shx": "^0.3.2",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12",
-    "@babel/preset-env": "^7.10.2",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-loader": "^8.0.0-beta.6"
+    "webpack-cli": "^3.3.12"
   }
 }

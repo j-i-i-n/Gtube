@@ -11,7 +11,7 @@ var ENTRY_FILE = path.resolve(__dirname, "assets", "js", "main.js");
 var OUTPUT_DIR = path.join(__dirname, "static");
 var config = {
   entry: ["@babel/polyfill", ENTRY_FILE],
-  mode: MODE,
+  mode: "development",
   module: {
     rules: [{
       test: /\.(js)$/,
