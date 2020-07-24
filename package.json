@@ -53,7 +53,6 @@
     "prebuild": "shx rm -r build",
     "tunnel": "lt -h -p 5000",
     "start": "cross-env NODE_ENV=production node build/init.js",
-    "prestart": "npm run build:server",
     "engines": "v12.18.0"
   },
   "devDependencies": {
